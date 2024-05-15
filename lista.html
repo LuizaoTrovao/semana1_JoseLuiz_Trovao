@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA</title>
+</head>
+<body>
+    
+    <script>
+
+        let conjunto = [];
+        let caracter;
+        let contador = 0;      
+        
+        recebeCaracteres();
+
+        console.log("O primeiro caracter digitado foi: ", conjunto[0])
+        console.log("O quarto caracter digitado foi: ", conjunto[3])
+        console.log("O quinto caracter digitado foi: ", conjunto[4])
+        console.log("O último caracter digitado foi: ", conjunto[9])
+        console.log("O tamanho da lista é: ", conjunto.length)
+
+        function recebeCaracteres()
+        {
+            while (contador < 10)
+            {        
+                caracter = prompt("Digite um caracter");
+                conjunto.push(caracter);
+                contador++;
+            }
+
+            alert("Lista Completa");
+
+            alert(conjunto);
+        }
+
+    </script>
+
+</body>
+</html>
